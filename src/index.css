@@ -26,6 +26,7 @@ code {
 body {
   margin: 0; }
 
+
 /* HTML5 display definitions
    ========================================================================== */
 /**
@@ -172,9 +173,10 @@ html {
   font-size: 1rem; }
 
 body {
-  color: #404040;
-  background: white;
-  font-size: 1rem; }
+  color: #455a64;
+  font-size: 1rem; 
+  font-family: 'Ubuntu', sans-serif;
+}
 
 p,
 ol,
@@ -311,6 +313,14 @@ dt {
 
 dd {
   margin-bottom: .5rem; }
+
+  .container{
+    color: #64b5f6;
+  }
+
+  .container h1,h2,h3,h4,h5{
+    color: #2286c3;
+  }
 
 .full-container {
   max-width: 100%;
@@ -462,9 +472,9 @@ dd {
 .button, a.button, button, [type=submit], [type=reset], [type=button] {
   -webkit-appearance: none;
   display: inline-block;
-  border: 1px solid #0366EE;
+  border: 1px solid #455a64;
   border-radius: 4px;
-  background: #0366EE;
+  background: #455a64;
   color: #ffffff;
   font-weight: 600;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -479,8 +489,8 @@ dd {
   line-height: 1; }
 
 .button:hover, a.button:hover, button:hover, [type=submit]:hover, [type=reset]:hover, [type=button]:hover {
-  border: 1px solid #0250bc;
-  background: #0250bc;
+  border: 1px solid #2286c3;
+  background: #2286c3;
   color: #ffffff;
   text-decoration: none; }
 
@@ -536,7 +546,7 @@ a.full-button {
 /* Forms */
 [type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea {
   display: block;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #455a64;
   border-radius: 4px;
   padding: .75rem;
   outline: none;
@@ -629,11 +639,11 @@ td {
   border-bottom: 1px solid #dedede; }
 
 #delete {
-  color: red;
+  color: #de5a63;
 }
 
 td button {
-  background-color: red;
+  background-color: #de5a63;
 }
 
 th,

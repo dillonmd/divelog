@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+// Sets initial state of form
 class Form extends Component {
     constructor(props) {
         super(props);
@@ -22,12 +23,12 @@ class Form extends Component {
             [name] : value
         });
     }
-
+// Submits form
     submitForm = () => {
         this.props.handleSubmit(this.state);
         this.setState(this.initialState);
     }
-
+// Displays form 
     render() {
         const { number, location, duration, depth, date } = this.state; 
 
