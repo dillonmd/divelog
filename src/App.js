@@ -35,7 +35,7 @@ render() {
             diveData={dives}
             removeDive={this.removeDive}
         />
-        <h3>Add New</h3>
+        <h3>Add A Dive</h3>
         <Form handleSubmit={this.handleSubmit} />
     </div>
 );
