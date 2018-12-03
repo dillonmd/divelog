@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faMoon } from '@fortawesome/free-solid-svg-icons';
 import Table from './Table';
 import Form from './Form';
+import NightMode from './NightMode';
+
+library.add(faMoon);
 
 // Initial state
 class App extends Component {
@@ -28,7 +33,9 @@ render() {
   const { dives } = this.state;
 
   return (
+    <body>  
     <div className="container">
+    <NightMode />
         <h1>DiveLog</h1>
         <p>Add a dive with location and time spent diving.</p>
         <Table
@@ -38,6 +45,7 @@ render() {
         <h3>Add A Dive</h3>
         <Form handleSubmit={this.handleSubmit} />
     </div>
+    </body>
 );
 }
 }
