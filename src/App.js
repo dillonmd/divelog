@@ -3,7 +3,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
 import Table from './Table';
 import Form from './Form';
-import NightMode from './NightMode';
+import NightMode from './NightMode.js';
 
 library.add(faMoon);
 
