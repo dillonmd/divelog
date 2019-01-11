@@ -64,10 +64,15 @@ class Form extends Component {
                     name="depth"
                     value={depth}
                     onChange={this.handleChange}/>
+                <div
+                    className="submit-wrapper"
+                    name="wrapper">
                 <input 
                     type="button" 
-                    value="Submit" 
+                    value="Submit"
+                    className="submit-btn"
                     onClick={this.submitForm} />
+                </div>
             </form>
         );
     }

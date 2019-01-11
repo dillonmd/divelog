@@ -316,7 +316,7 @@ code {
   display: inline-block;
   border: 1px solid #455a64;
   border-radius: 4px;
-  background: #455a64;
+  background: var(--base);
   color: #ffffff;
   font-weight: 600;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -337,8 +337,8 @@ code {
   text-decoration: none; }
 
 .button:focus, .button:active, a.button:focus, a.button:active, button:focus, button:active, [type=submit]:focus, [type=submit]:active, [type=reset]:focus, [type=reset]:active, [type=button]:focus, [type=button]:active {
-  border: 1px solid var(--base  );
-  background: var(--base  );
+  border: 1px solid var(--base);
+  background: var(--base);
   color: #ffffff;
   text-decoration: none; }
 
@@ -346,12 +346,7 @@ code {
   border: 0;
   padding: 0; }
 
-.night-btn {
-  position: relative;
-    float: right;
-    margin: 10px;
-    background-color: #455a64;
-}
+
 
 /* Form */
 [type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea {
@@ -445,6 +440,13 @@ td button {
   background-color: #de5a63;
 }
 
+.submit-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
 th,
 td {
   text-align: left;
@@ -474,9 +476,15 @@ caption {
     background: black;
   }
 
+  .night-btn {
+    position: relative;
+      float: right;
+      margin: 10px;
+  }
+
   .dark .night-btn {
     position: relative;
-    background: var(--gray9);
+    background: var(--base);
     float: right;
     margin: 10px;
   }
