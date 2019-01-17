@@ -1,6 +1,6 @@
 ## divelog
 
-<a href="https://dive.dillonmd.com/">dive.dillonmd.com</a>
+<a href="http://dive.dillonmd.com/">dive.dillonmd.com</a>
 
 Open source divelog made with React <br>
 As of now you can add dives with Date, Location, Duration and Depth as well as delete your entries. <br>
