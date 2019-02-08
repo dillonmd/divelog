@@ -4,6 +4,7 @@ import { faMoon } from '@fortawesome/free-solid-svg-icons';
 import Table from './Table';
 import Form from './Form';
 import NightMode from './Nightmode';
+import SimpleStorage from "react-simple-storage";
 
 library.add(faMoon);
 
@@ -35,6 +36,7 @@ render() {
   return (
     <body>  
     <div className="container">
+    <SimpleStorage parent={this} />
     <NightMode />
         <h1>DiveLog</h1>
         <p>Add a dive with location and time spent diving.</p>
