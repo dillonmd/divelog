@@ -36,10 +36,10 @@ code {
 
 
  html {
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  background: #373B44;  
+  background: -webkit-linear-gradient(to right, #2286c3, #373B44);
+  background: linear-gradient(to right, #2286c3, #373B44); 
+  }
 
   h1 {
     margin-bottom: 10px;
@@ -211,29 +211,3 @@ caption {
 @media (min-width: 600px) {
   .contain-table {
     width: 100%; } }
-
-
-
-/* Night Mode 
-  ==============*/
-
-  .dark {
-    background: black;
-  }
-
-  .night-btn {
-    position: relative;
-      float: right;
-      margin: 10px;
-  }
-
-  .dark .night-btn {
-    position: relative;
-    background: var(--base);
-    float: right;
-    margin: 10px;
-  }
-
-  .dark input {
-    color: white;
-  }
