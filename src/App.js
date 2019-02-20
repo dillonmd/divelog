@@ -33,7 +33,7 @@ render() {
     <body className="light">  
     <div className="container">
     <SimpleStorage parent={this} />
-        <h1>DiveLog</h1>
+        <h1>Dive Dot</h1>
         <p>Add a dive with location and time spent diving.</p>
         <Table
             diveData={dives}
