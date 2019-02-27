@@ -30,7 +30,6 @@ class App extends Component {
     const { dives } = this.state;
 
     return (
-      <body className="light">
         <div className="container">
           <SimpleStorage parent={this} />
           <h1>Dive Dot</h1>
@@ -39,7 +38,6 @@ class App extends Component {
           <h3>Add A Dive</h3>
           <Form handleSubmit={this.handleSubmit} />
         </div>
-      </body>
     );
   }
 }
