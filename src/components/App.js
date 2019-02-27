@@ -30,14 +30,14 @@ class App extends Component {
     const { dives } = this.state;
 
     return (
-        <div className="container">
-          <SimpleStorage parent={this} />
-          <h1>Dive Dot</h1>
-          <p>Add a dive with location and time spent diving.</p>
-          <Table diveData={dives} removeDive={this.removeDive} />
-          <h3>Add A Dive</h3>
-          <Form handleSubmit={this.handleSubmit} />
-        </div>
+      <div className="container">
+        <SimpleStorage parent={this} />
+        <h1>Dive Dot</h1>
+        <h3>Past Dives</h3>
+        <Table diveData={dives} removeDive={this.removeDive} />
+        <h3>Add A Dive</h3>
+        <Form handleSubmit={this.handleSubmit} />
+      </div>
     );
   }
 }
