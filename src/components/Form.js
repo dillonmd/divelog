@@ -6,7 +6,7 @@ class Form extends Component {
     super(props);
 
     this.initialState = {
-      number: 1,
+      number: 0,
       location: "",
       duration: "",
       depth: "",
@@ -31,7 +31,7 @@ class Form extends Component {
   };
   // Displays form
   render() {
-    const { number, location, duration, depth, date } = this.state;
+    const { location, duration, depth, date } = this.state;
 
     return (
       <form>

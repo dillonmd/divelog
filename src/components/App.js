@@ -14,7 +14,7 @@ class App extends Component {
     const { dives } = this.state;
     // Set State
     this.setState({
-      dives: dives.filter((Dive, i) => {
+      dives: dives.filter((dive, i) => {
         return i !== index;
       })
     });
@@ -25,7 +25,7 @@ class App extends Component {
     this.setState({ dives: [...this.state.dives, dive] });
   };
 
-  // Displays app contents and form submissions
+  // Displays app contents
   render() {
     const { dives } = this.state;
 
