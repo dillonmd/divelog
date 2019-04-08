@@ -6,7 +6,7 @@ class Form extends Component {
     super(props);
 
     this.initialState = {
-      number: 0,
+      number: "",
       location: "",
       duration: "",
       depth: "",
@@ -23,22 +23,31 @@ class Form extends Component {
       [name]: value
     });
   };
+
   // Submits form
   submitForm = () => {
     this.props.handleSubmit(this.state);
     this.setState(this.initialState);
-    this.initialState.number = this.initialState.number + 1;
   };
+
   // Displays form
   render() {
-    const { location, duration, depth, date } = this.state;
+    const { number, location, duration, depth, date } = this.state;
 
     return (
       <form>
+        <label>Number</label>
+        <input
+          type="text"
+          name="number"
+          value={number}
+          onChange={this.handleChange}
+        />
         <label>Date</label>
         <input
           type="text"
           name="date"
+          // placeholder= {this.datePlaceholder}
           value={date}
           onChange={this.handleChange}
         />
@@ -63,7 +72,7 @@ class Form extends Component {
           value={depth}
           onChange={this.handleChange}
         />
-        <div className="submit-wrapper" name="wrapper">
+        <div className="submit" name="submit">
           <input
             type="button"
             value="Submit"

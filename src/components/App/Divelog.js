@@ -3,13 +3,15 @@ import Table from "./Table";
 import Form from "./Form";
 import SimpleStorage from "react-simple-storage";
 
-class App extends Component {
+import { withAuthorization } from '../Session';
+
+class Divelog extends Component {
   // Initial state
   state = {
     dives: []
   };
 
-  // Remove an entry
+  // Remove an entry from the log
   removeDive = index => {
     const { dives } = this.state;
     // Set State
@@ -42,4 +44,6 @@ class App extends Component {
   }
 }
 
-export default App;
+const condition = authUser => !!authUser;
+
+export default withAuthorization(condition)(Divelog);
